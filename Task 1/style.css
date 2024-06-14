@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color:#6ca6e1;
+    padding: 20px;
+    color: #333;
+}
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+
+nav ul li img {
+    height: 40px;
+}
+
+nav ul li:last-child a {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.main {
+    background: rgba(0, 0, 0, 0.5) url(https://t3.ftcdn.net/jpg/05/89/70/46/360_F_589704609_b84XoVDaeopctL2Iz0lG4IQT86Dzm7xz.jpg);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 0px 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-blend-mode: darken;
+}
+
+
+.main h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #34495e;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choice {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    flex: 1 0 30%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.choice:hover {
+    transform: translateY(-10px);
+}
+
+.choice img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.choice h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.choice p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-form {
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius:10px 10px 0 0;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+.contact-form input[type="submit"] {
+    background: #ff6347;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-corner {
+    background: #f4f4f4;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li:last-child {
+        margin-left: 0;
+    }
+
+    nav ul li img {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+    }
+}
