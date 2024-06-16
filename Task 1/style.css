@@ -59,7 +59,35 @@ nav ul li:last-child a:hover {
     background-color: #0056b3;
 }
 
-
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 5s steps(22) 3, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
 .main {
     background: rgba(0, 0, 1, 0.4) url(https://t3.ftcdn.net/jpg/05/89/70/46/360_F_589704609_b84XoVDaeopctL2Iz0lG4IQT86Dzm7xz.jpg);
