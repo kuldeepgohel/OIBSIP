@@ -61,7 +61,6 @@ nav ul li:last-child a:hover {
 
 .wrapper {
     height: 10vh;
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
     font-size: 30px;
